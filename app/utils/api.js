@@ -35,6 +35,7 @@ function getRepos(username) {
 }
 
 function getStarCount(repos) {
+  // eslint-disable-next-line camelcase
   return repos.reduce((count, { stargazers_count }) => count + stargazers_count, 0);
 }
 
